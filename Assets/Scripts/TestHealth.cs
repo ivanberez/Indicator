@@ -1,16 +1,17 @@
 using System;
 using UnityEngine;
 
-public class DataIndicator : MonoBehaviour, IDataIndication
+public class TestHealth : MonoBehaviour, IDataIndication
 {
     [SerializeField, Min(0)] private float _curent;
     [SerializeField, Min(0)] private float _max;    
     [SerializeField] private Indicator _indicator;
 
-    [SerializeField] private float _testDamaged;
+    [SerializeField, Min(0)] private float _testDamaged;
     [SerializeField, Min(0)] private float _testAidKit;
 
     public event Action Changed;
+
     public float Curent => _curent;
     public float Max => _max;    
 
@@ -21,21 +22,13 @@ public class DataIndicator : MonoBehaviour, IDataIndication
 
     public void TakeDamage() 
     {
-        _curent -= _testDamaged; 
-
-        if( _curent < 0 ) 
-            _curent = 0;
-
+        _curent -= Mathf.Clamp(_testDamaged, 0, _curent); 
         Changed?.Invoke(); 
     }
 
     public void TakeAidKit()
     {
-        _curent += _testAidKit;
-
-        if(_curent > _max ) 
-            _curent = _max; 
-
+        _curent += Mathf.Clamp(_testAidKit, 0, _max - _curent);
         Changed?.Invoke();
     }
 }
