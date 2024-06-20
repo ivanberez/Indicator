@@ -23,12 +23,12 @@ public class IndicationBar : IndicationElement
         }
     }
 
-    protected override void InstantDisplay(IDataIndication dataIndication)
+    protected override void ShowInstant(IDataIndication dataIndication)
     {
         _imageIndication.fillAmount = dataIndication.Curent / dataIndication.Max;
     }
 
-    protected override IEnumerator SmoothedDisplayRoutine(IDataIndication dataIndication)
+    protected override IEnumerator SmoothRoutine(IDataIndication dataIndication)
     {
         float targetFillAmount = dataIndication.Curent / dataIndication.Max;
         float speedSmooth = Mathf.Abs(targetFillAmount - _imageIndication.fillAmount);

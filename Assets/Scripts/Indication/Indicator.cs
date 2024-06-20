@@ -13,7 +13,7 @@ public class Indicator : MonoBehaviour
         _dataIndication.Changed -= Refresh;
     }
 
-    public void Initialization(IDataIndication dataIndication)
+    public void Initialize(IDataIndication dataIndication)
     {
         _dataIndication = dataIndication;
         _dataIndication.Changed += Refresh;

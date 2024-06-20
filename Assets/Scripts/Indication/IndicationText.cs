@@ -15,12 +15,12 @@ public class IndicationText : IndicationElement
         _textMeshPro = GetComponent<TextMeshProUGUI>();
     }
 
-    protected override void InstantDisplay(IDataIndication dataIndication)
+    protected override void ShowInstant(IDataIndication dataIndication)
     {
         ChangeText(_tempValue = dataIndication.Curent, dataIndication.Max);
     }
 
-    protected override IEnumerator SmoothedDisplayRoutine(IDataIndication dataIndication)
+    protected override IEnumerator SmoothRoutine(IDataIndication dataIndication)
     {
         float targetValue = dataIndication.Curent;
         float speedSmooth = Mathf.Abs(targetValue - _tempValue);               
