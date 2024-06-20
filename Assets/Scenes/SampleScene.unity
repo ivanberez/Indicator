@@ -156,8 +156,6 @@ RectTransform:
   - {fileID: 76569278}
   - {fileID: 1982101709}
   - {fileID: 1235154377}
-  - {fileID: 717499314}
-  - {fileID: 1670883354}
   m_Father: {fileID: 242565032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -325,8 +323,6 @@ RectTransform:
   m_Children:
   - {fileID: 1751615243}
   - {fileID: 1394314026}
-  - {fileID: 957292456}
-  - {fileID: 716315985}
   m_Father: {fileID: 242565032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -473,6 +469,7 @@ RectTransform:
   m_Children:
   - {fileID: 91283137}
   - {fileID: 28997378}
+  - {fileID: 1856772227}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -797,7 +794,7 @@ GameObject:
   - component: {fileID: 716315987}
   - component: {fileID: 716315986}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: AidKitHeart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -816,11 +813,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1550567983}
-  m_Father: {fileID: 91283137}
+  m_Father: {fileID: 1856772227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: -220}
+  m_AnchoredPosition: {x: 120, y: 265}
   m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716315986
@@ -868,14 +865,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 737798773}
-        m_TargetAssemblyTypeName: DataIndicator, Assembly-CSharp
+        m_TargetAssemblyTypeName: TestHealth, Assembly-CSharp
         m_MethodName: TakeAidKit
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 2
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -930,7 +927,7 @@ GameObject:
   - component: {fileID: 717499316}
   - component: {fileID: 717499315}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: DamageBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -949,11 +946,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1404617484}
-  m_Father: {fileID: 28997378}
+  m_Father: {fileID: 1856772227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: -220}
+  m_AnchoredPosition: {x: -120, y: -448.00003}
   m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717499315
@@ -1001,14 +998,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1018734524}
-        m_TargetAssemblyTypeName: DataIndicator, Assembly-CSharp
+        m_TargetAssemblyTypeName: TestHealth, Assembly-CSharp
         m_MethodName: TakeDamage
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -1062,7 +1059,7 @@ GameObject:
   - component: {fileID: 737798773}
   - component: {fileID: 737798774}
   m_Layer: 0
-  m_Name: DataIndicatorHeart
+  m_Name: DemonstrationPair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,12 +1073,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737798769}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.22304723, y: 0.60251147, z: -777.67346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2064131041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &737798773
 MonoBehaviour:
@@ -1097,9 +1094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _curent: 3
   _max: 3
-  _indicator: {fileID: 737798774}
-  _testDamaged: 1
-  _testAidKit: 2
 --- !u!114 &737798774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,7 +1203,7 @@ GameObject:
   - component: {fileID: 957292458}
   - component: {fileID: 957292457}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: DamageHeart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,11 +1222,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1534453791}
-  m_Father: {fileID: 91283137}
+  m_Father: {fileID: 1856772227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: -220}
+  m_AnchoredPosition: {x: -120, y: 265}
   m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &957292457
@@ -1280,14 +1274,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 737798773}
-        m_TargetAssemblyTypeName: DataIndicator, Assembly-CSharp
+        m_TargetAssemblyTypeName: TestHealth, Assembly-CSharp
         m_MethodName: TakeDamage
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -1341,7 +1335,7 @@ GameObject:
   - component: {fileID: 1018734524}
   - component: {fileID: 1018734523}
   m_Layer: 0
-  m_Name: DataIndicatorBar
+  m_Name: DemonstrationPair2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,9 +1372,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _curent: 100
   _max: 100
-  _indicator: {fileID: 1018734523}
-  _testDamaged: 5
-  _testAidKit: 20
 --- !u!4 &1018734525
 Transform:
   m_ObjectHideFlags: 0
@@ -1389,12 +1380,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018734522}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.22304723, y: 0.60251147, z: -777.67346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2064131041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1235154376
 GameObject:
@@ -1869,7 +1860,7 @@ GameObject:
   - component: {fileID: 1670883356}
   - component: {fileID: 1670883355}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: AidKitBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1888,11 +1879,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 849261796}
-  m_Father: {fileID: 28997378}
+  m_Father: {fileID: 1856772227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: -220}
+  m_AnchoredPosition: {x: 120, y: -448.00003}
   m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1670883355
@@ -1940,14 +1931,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1018734524}
-        m_TargetAssemblyTypeName: DataIndicator, Assembly-CSharp
+        m_TargetAssemblyTypeName: TestHealth, Assembly-CSharp
         m_MethodName: TakeAidKit
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 30
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -2080,6 +2071,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fillMethod: 0
   _imagePreview: {fileID: 1394314028}
+--- !u!1 &1856772226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856772227}
+  m_Layer: 5
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1856772227
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856772226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 957292456}
+  - {fileID: 716315985}
+  - {fileID: 717499314}
+  - {fileID: 1670883354}
+  m_Father: {fileID: 242565032}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1982101708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,11 +2185,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982101708}
   m_CullTransparentMesh: 1
+--- !u!1 &2064131039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064131041}
+  - component: {fileID: 2064131040}
+  m_Layer: 0
+  m_Name: VisualizationHab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2064131040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064131039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b13cdd8a1304944e99f4abe938f2d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health1: {fileID: 737798773}
+  _health2: {fileID: 1018734524}
+  _indicator1: {fileID: 737798774}
+  _indicator2: {fileID: 1018734523}
+--- !u!4 &2064131041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064131039}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22304723, y: -0.60251147, z: 777.67346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 737798771}
+  - {fileID: 1018734525}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 737798771}
-  - {fileID: 1018734525}
   - {fileID: 101543659}
+  - {fileID: 2064131041}

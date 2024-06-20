@@ -4,31 +4,22 @@ using UnityEngine;
 public class TestHealth : MonoBehaviour, IDataIndication
 {
     [SerializeField, Min(0)] private float _curent;
-    [SerializeField, Min(0)] private float _max;    
-    [SerializeField] private Indicator _indicator;
-
-    [SerializeField, Min(0)] private float _testDamaged;
-    [SerializeField, Min(0)] private float _testAidKit;
-
+    [SerializeField, Min(0)] private float _max;        
+    
     public event Action Changed;
 
     public float Curent => _curent;
     public float Max => _max;    
 
-    private void Awake()
+    public void TakeDamage(float damage) 
     {
-        _indicator.Initialization(this);
-    }
-
-    public void TakeDamage() 
-    {
-        _curent -= Mathf.Clamp(_testDamaged, 0, _curent); 
+        _curent -= Mathf.Clamp(damage, 0, _curent); 
         Changed?.Invoke(); 
     }
 
-    public void TakeAidKit()
+    public void TakeAidKit(float count)
     {
-        _curent += Mathf.Clamp(_testAidKit, 0, _max - _curent);
+        _curent += Mathf.Clamp(count, 0, _max - _curent);
         Changed?.Invoke();
     }
 }
